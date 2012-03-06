@@ -1,0 +1,81 @@
+<h1><perch:content id="track_title" type="text" label="Track title" /></h1>
+<div id="player"><a href=""></a></div>
+<div id="jplayer"></div>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+	$("#jplayer").jPlayer({
+		ready: function (event) {
+			$(this).jPlayer("setMedia", {
+				mp3:"<perch:content id="audio" type="file" label="Audio sample" />"
+			});
+		},
+		swfPath: "/assets/flash",
+		supplied: "mp3",
+		mode: "window"
+	});
+});
+//]]>
+</script>
+<table width="770" border="0" cellspacing="0" cellpadding="0" id="songdata">
+	<tr>
+		<td>
+			<table width="385" border="0" cellspacing="0" cellpadding="0" id="left">
+				<tr valign="top">
+					<td><span class="datatitle">Length:</span><span class="datapoint"><perch:content id="track_length" type="text" label="Length" /></span></td>
+				</tr>
+				<tr>
+					<td><span class="datatitle">Tempo:</span><span class="datapoint"><perch:content id="track_tempo" type="text" label="Tempo" />bpm</span></td>
+				</tr>
+				<tr>
+					<td><span class="datatitle">Classification:</span><span class="datapoint"><perch:content id="classification" type="select" label="Main classification" 
+options="Song, Advert, Soundtrack, Theme, Instrumental, Oddities" allowempty="false" required="true" /></span></td>
+				</tr>
+				<tr>
+					<td><span class="datatitle">Sub classifications:</span><span class="datapoint subclass"><perch:content id="sub_classification" type="textarea" label="Sub classifications" size="s" /></span></td>
+				</tr>
+				<tr>
+					<td><span class="datatitle">Genre:</span><span class="datapoint"><perch:content id="track_genre" type="textarea" label="Genre" editor="markitup" size="s" /></span></td>
+				</tr>
+				<tr>
+					<td><span class="datatitle">Date started:</span><span class="datapoint"><perch:content id="date_started" type="date" label="Date started" format="%Y-%m-%d" /></span></td>
+				</tr>
+				<tr>
+					<td><span class="datatitle">Date last modified:</span><span class="datapoint"><perch:content id="date_modified" type="date" label="Date modified" format="%Y-%m-%d" /></span></td>
+				</tr>
+				<tr>
+					<td><span class="datatitle">Completed:</span><span class="datapoint"><perch:content id="track_completed" type="select" label="Completed" 
+options="Yes, No" allowempty="false" required="true" /></span></td>
+				</tr>
+			</table>
+		</td>
+		<td>
+			<table width="385" border="0" cellspacing="0" cellpadding="0" id="right" valign="top">
+				<tr>
+					<td><span class="datatitle">PRS tunecode:</span><span class="datapoint"><perch:content id="track_prs" type="text" label="PRS tunecode" /></span></td>
+				</tr>
+				<tr>
+					<td><span class="datatitle">ISRC tunecode:</span><span class="datapoint"><perch:content id="isrc_prs" type="text" label="ISRC tunecode" /></span></td>
+				</tr>
+				<tr>
+					<td><span class="datatitle">Placements:</span><span class="datapoint placements"><perch:content id="track_placements" type="textarea" label="Placements" size="s" /></span></td>
+				</tr>
+				<tr>
+					<td><span class="datatitle">Exclusive:</span><span class="datapoint"><perch:content id="track_exclusive" type="select" label="Exclusive" options="Yes, No" allowempty="false" required="true" /></span></td>
+				</tr>
+				<tr>
+					<td><span class="datatitle">H&amp;S Rating:</span><span class="datapoint rating"><perch:content id="track_rating" type="select" label="Rating" options="1, 2, 3, 4, 5" allowempty="false" required="true" /></span></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<div class="notes clearfix">
+	<h2>Notes &amp; comments:</h2>
+
+	<perch:if exists="packshot"><img class="packshot" src="<perch:content id="packshot" type="image" label="Packshot" width="200" height="200" crop="true" />" alt="Packshot" /></perch:if>
+	<div class="comments">
+		<perch:content id="track_comments" type="textarea" label="Notes & Comments" textile="true" editor="markitup" />
+	</div>
+</div>

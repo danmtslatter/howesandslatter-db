@@ -1,0 +1,54 @@
+	/*
+******************************************************
+
+	ideajunction.co.uk
+
+******************************************************
+	*/
+	
+	#wrap { width:790px; margin:0 auto; }
+	
+	
+	.main-header a { display:block; width:790px; height:101px; margin:40px 0 0 0; background-image:url(../images/header.jpg); }
+	.main-header a:hover { border:0; }
+	.content { position:relative; }
+	
+	#sub-header { width:790px; height:77px; margin:0 0 25px 0; position:relative; }
+	#search { width:386px; height:77px; background-image:url(../images/search-bg.jpg); position:absolute; right:10px; top:0px; }
+		#search form input.text { width:270px; height:47px; padding:0 10px; border:none; background:transparent; margin:15px 0 0 14px; }
+		#search form input#go { width:57px; height:57px; background:transparent; background-image:url(../images/go.png); margin:0 0 0 10px; text-indent:-9999px; border:none; }
+	
+	#player a { display:block; width:38px; height:38px; background-image:url(../images/player.jpg); position:absolute; top:-12px; right:10px;  }
+	#player a:hover { border:0; }
+	
+	table#songlist { border-collapse:separate; border-spacing:0 5px; }
+	tr.data { height:24px; }
+	
+	table#songdata { margin:30px 0 30px 10px; padding:0 0 50px 0; }
+		table#left, table#right { border-collapse:separate; border-spacing:0 15px; }
+			.datatitle { float:left; width:auto; margin:0 10px 0 0; clear:right; }
+				td .subclass { width:250px; }
+				td .placements { width:270px; }
+			.datapoint { float:left; width:auto; margin:4px 0 0 0; clear:right; }
+			.rating { height:13px; width:83px; background-image:url(../images/hearts.jpg); text-indent:-9999px; }
+			
+	.notes { padding:0 0 50px 0; }
+		.packshot { float:left; border:2px solid #20282f; margin:0 5px 0 10px; }
+		p { width:500px; float:left; }
+		
+	tr th:hover { cursor:pointer; }
+	
+	h1#search-title { margin:0 0 15px 10px; }
+	h1#workspace-title { position:absolute; top:42px; left:6px; }
+	h1#most-recent { margin:0 0 20px 0; }
+	
+	#workspaces { margin:0 0 20px 0; }
+		#workspaces ul { width:770px; margin:0 0 0 10px; }
+			#workspaces ul li a:hover { border:none; }
+				#workspaces ul li a .workspace-title { font-family:'AlternateGothicW01-No1'; font-size:46px; color:#999; position:relative; top:-20px; }
+				#workspaces ul li a:hover .workspace-title { color:#333; }
+		#workspaces ul li { width:385px; height:70px; float:left; margin:0 0 20px 0; }
+			#workspaces ul li img { width:70px; height:70px; }
+			
+		
+		

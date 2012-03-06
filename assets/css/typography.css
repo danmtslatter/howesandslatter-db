@@ -1,0 +1,28 @@
+	/*
+******************************************************
+
+	ideajunction.co.uk
+
+******************************************************
+	*/
+	
+	/*
+	
+	font-family:'AlternateGothicW01-No1';
+	font-family:'AlternateGothicW01-No2';
+	font-family:'AlternateGothicW01-No3';
+	
+	*/
+	
+	h1 { font-family:'AlternateGothicW01-No1'; font-size:46px; color:#20282f; margin:0 0 0 5px; }
+	h2 { margin:0 0 20px 10px; }
+	
+	th, .datatitle, h2 { font-family:'AlternateGothicW01-No1'; font-size:24px; color:#20282f; }
+	*, .inline-text { font-family:Arial, sans-serif; font-size:14px; color:#5a6875; line-height:18px; font-weight:normal; }
+	
+	a { color:#20282f; text-decoration:none; }
+	a:hover { border-bottom:2px solid #20282f; }
+	
+	.comments p { margin:0 0 10px 10px;  }
+	
+	form input, .search-result { font-family:'AlternateGothicW01-No1'; font-size:24px; color:#999; font-weight:normal; }
