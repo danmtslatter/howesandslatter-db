@@ -9,7 +9,7 @@
 		<meta name="revisit-after" content="" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<meta name="author" content="ideajunction.co.uk" />
+		<meta name="author" content="howesandslatter.com" />
 		<meta name="copyright" content="" />
 		<meta name="company" content="" />
 		<link rel="stylesheet" type="text/css" media="all" href="<?php echo $siteRoot; ?>assets/css/main.css" />
