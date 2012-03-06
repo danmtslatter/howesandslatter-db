@@ -29,7 +29,7 @@
 	}
 	
 	// Attempt to connect to the My SQL server
-	$link = @mysql_connect("localhost", "root", "Ioint3");
+	$link = @mysql_connect("localhost", "root", "ykuaPsKfYK");
 	
 	// If the connection was unsuccessful
 	if (!$link) die("Error connecting to database server");

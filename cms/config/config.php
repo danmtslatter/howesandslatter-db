@@ -3,7 +3,7 @@
     define('PERCH_LICENSE_KEY', 'P11201-KRY228-JPX905-JMU055-JYN012');
 
     define("PERCH_DB_USERNAME", 'root');
-    define("PERCH_DB_PASSWORD", 'Ioint3');
+    define("PERCH_DB_PASSWORD", 'ykuaPsKfYK');
     define("PERCH_DB_SERVER", "localhost");
     define("PERCH_DB_DATABASE", "songs");
     define("PERCH_DB_PREFIX", "perch_");
